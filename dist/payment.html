@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Arabi store</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/html" src="{require('index.js')}"></script>
+
+<link href="css/style.css" rel="stylesheet"></head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="navbar navbar-expand-lg custom-navbar">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button class="navbar-toggler btn btn-icon collapsed" data-toggle="collapse"
+                            data-target="#navbar-collapsed-menu">
+                            <i class="fas fa-bars"></i>
+                        </button>
+
+                        <a href="./checkout.html" class="navbar-toggler btn btn-icon">
+                            <i class="fas fa-shopping-cart"></i>
+                        </a>
+
+                        <a href="." class="navbar-brand">
+                            <img src="images/logo.png" alt="Arabi store">
+                        </a>
+                    </div>
+                    <form class="form-inline">
+                        <input class="form-control custom-form-control" type="search" placeholder="Search">
+                        <div class="dropdown categories">
+                            <a class="nav-link dropdown-toggle custom-btn" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-expanded="false">
+                                Choose category
+                            </a>
+                            <ul class="dropdown-menu custom-dropdown-menu">
+                                <li>
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" name="search-category" value="men"> Men
+                                        </label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" name="search-category" value="women"> Women
+                                        </label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" name="search-category" value="kids">Kids
+                                        </label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <button class="btn search-btn" type="submit">Search</button>
+                    </form>
+                    <div class="collapse navbar-collapse" id="navbar-collapsed-menu">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="./index.html">Home page</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-toggle="dropdown" aria-expanded="false">Store sections</a>
+                                <ul class="dropdown-menu custom-dropdown-menu">
+                                    <li>
+                                        <a class="dropdown-item" href="#">Men</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">Women</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">Kids</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./search.html">Research</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./contact.html">Contact us</a>
+                            </li>
+                            <li class="d-none d-lg-block">
+                                <a href="checkout.html" id="btn-shopping-cart" class="btn btn-icon" title="Buying cart"
+                                    data-toggle="tooltip" data-placement="bottom">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <div class="container">
+
+            <div class="row">
+                <ol class="breadcrumb custom-breadcrumb">
+                    <li>
+                        <a href=".">Home page</a>
+                    </li>
+                    <li>
+                        <a href="checkout.html">Buying cart</a>
+                    </li>
+                    <li class="active">Pay</li>
+                </ol>
+            </div>
+
+            <form id="form-checkout">
+                <div class="row">
+                    <div class="col-12 col-lg-6">
+                        <h3 class="custom-heading">Your personal info</h3>
+                        <div class="row">
+                            <div class="col-md-6  form-group">
+                                <input type="text" class="form-control custom-form-control custom-input-details"
+                                    placeholder="first name" name="first_name" required>
+                            </div>
+                            <div class="col-md-6  form-group">
+                                <input type="text" class="form-control custom-form-control custom-input-details"
+                                    placeholder="last name" name="last_name" required>
+                            </div>
+                            <div class="col-md-6  form-group">
+                                <input type="email" class="form-control custom-form-control custom-input-details"
+                                    placeholder="email address" name="email" required>
+                            </div>
+                            <div class="col-md-6  form-group">
+                                <input type="text" class="form-control custom-form-control custom-input-details"
+                                    placeholder="area" name="area" required>
+                            </div>
+                            <div class="col-md-6  form-group">
+                                <select class="form-control custom-form-control custom-input-details" name="country"
+                                    required>
+                                    <option disabled selected value="">Pick a country</option>
+                                    <option value="sa">KSA</option>
+                                    <option value="eg">Egypt</option>
+                                    <option value="jo">Jordan</option>
+                                    <option value="sy">Syria</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6  form-group">
+                                <select class="form-control custom-form-control custom-input-details" name="city"
+                                    required>
+                                    <option disabled selected value="">Pick a city</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6  form-group">
+                                <input class="form-control custom-form-control custom-input-details" type="text"
+                                    placeholder="mobile number" name="phone" required>
+                            </div>
+                            <div class="col-md-6  form-group">
+                                <input class="form-control custom-form-control custom-input-details" type="text"
+                                    placeholder="address1" name="address1" required>
+                            </div>
+                            <div class="col-md-6  form-group">
+                                <input class="form-control custom-form-control custom-input-details" type="text"
+                                    placeholder="address2 (optional)" name="address2">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-6">
+                        <h3 class="custom-heading">Payment info</h3>
+                        <div class="row">
+                            <div class="form-group col-md-6">
+                                <label class="font-weight-bold">
+                                    <input type="radio" name="payment_method" value="credit_card" checked>
+                                    Pay via credit card
+                                </label>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label class="font-weight-bold">
+                                    <input type="radio" name="payment_method" value="on_delivery">
+                                    Pay cash on delivery
+                                </label>
+                            </div>
+                            <div class="row" id="credit-card-info">
+                                <div class="form-group col-md-6">
+                                    <input class="form-control custom-form-control custom-input-details" type="text"
+                                        name="credit_card_number" placeholder="card number" required>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <input name="credit_card_expiration_month"
+                                        class="form-control custom-form-control custom-input-details"
+                                        placeholder="exp month" type="number" min="1" max="12" required>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <input class="form-control custom-form-control custom-input-details" type="number"
+                                        min="2018" max="2030" placeholder="exp year" name="credit_card_expiration_year"
+                                        required>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <input class="form-control custom-form-control custom-input-details" type="number"
+                                        name="credit_card_cvv" placeholder="CVV" required>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12">
+                        <h3 class="custom-heading table-title">Your order</h3>
+                        <table class="custom-table">
+                            <thead>
+                                <tr>
+                                    <th>product</th>
+                                    <th>price</th>
+                                    <th>quantity</th>
+                                    <th class="hide-on-small">total</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr data-product-info data-product-price="400">
+                                    <td>
+                                        <div class="media custom-media">
+                                            <div class="media-right d-none d-md-block">
+                                                <img src="images/lacoste_1.jpg" alt="Lacoste men's t-shirt"
+                                                    class="media-object">
+                                            </div>
+                                            <div class="media-body">
+                                                <h4>Lacoste men's t-shirt</h4>
+                                                <div class="custom-text-muted">
+                                                    Men's clothes
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        400$
+                                    </td>
+                                    <td>
+                                        <input name="product1" type="hidden" value="Lacoste men's t-shirt">
+                                        <select name="quantity1"
+                                            class="form-control custom-form-control select-inline quantity"
+                                            data-product-quantity>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3" selected>3</option>
+                                        </select>
+                                    </td>
+                                    <td class="total-price-for-product hide-on-small">
+                                        1200$
+                                    </td>
+                                    <td>
+                                        <button class="btn btn-danger  custom-btn-danger" data-remove-from-cart>
+                                            <span class="d-none d-md-block">delete</span>
+                                            <i class="fas fa-trash-alt d-block d-md-none"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr data-product-info data-product-price="300">
+                                    <td>
+                                        <div class="media custom-media">
+                                            <div class="media-right d-none d-md-block">
+                                                <img src="images/tshirt.jpg" alt="Adidas t-shirt" class="media-object">
+                                            </div>
+                                            <div class="media-body">
+                                                <h4>Adidas t-shirt</h4>
+                                                <div class="custom-text-muted">
+                                                    Men's clothes
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>300$</td>
+                                    <td>
+                                        <input name="product2" type="hidden" value="Adidas t-shirt">
+                                        <select name="quantity2"
+                                            class="form-control custom-form-control select-inline quantity"
+                                            data-product-quantity>
+                                            <option value="1" selected>1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                        </select>
+                                    </td>
+                                    <td class="total-price-for-product hide-on-small">
+                                        300$
+                                    </td>
+                                    <td>
+                                        <button class="btn btn-danger custom-btn-danger custom-btn"
+                                            data-remove-from-cart>
+                                            <span class="d-none d-md-block">delete</span>
+                                            <i class="fas fa-trash-alt d-block d-md-none"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td colspan="5" class="total-price">
+                                        <span class="custom-text-muted">
+                                            <span class="custom-text-muted">
+                                                Whole sale for products
+                                            </span>
+                                            <span id="total-price-for-all-products">1500</span>
+                                            Dollar
+                                        </span>
+                                    </td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                        <button type="submit" class="btn custom-btn-primary2 custom-btn-with-icon btn-lg">
+                            <span>
+                                Continue buying process
+                                <i class="fas fa-dollar-sign fa-lg"></i>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div id="footer" class="row">
+            <div id="brand-logos" class="col-12 text-center">
+                <span>The store is an authorized agent of major international companies</span>
+                <div class="img-container">
+                    <img src="images/lacoste.png" alt="Lacoste">
+                    <img src="images/adidas.png" alt="Adidas">
+                    <img src="images/puma.png" alt="Puma">
+                    <img src="images/polo.png" alt="Polo">
+                </div>
+            </div>
+
+            <div id="footer-nav" class="col-12 text-center">
+                <div class="footer-logo">
+                    <a href="./">
+                        <img src="images/logo_footer.png" alt="Arabi">
+                    </a>
+                </div>
+                <div id="footer-nav-links" class="col-12 d-none d-md-block">
+                    <a href=".">Home page</a>
+                    <a href="search.html">Research</a>
+                    <a href="contact.html">Contact us</a>
+                </div>
+                <div id="newsletter" class="col-12 col-md-6 offset-md-3">
+                    <form>
+                        <label for="footer-email">
+                            Follow our mail newsletter to recieve our latestnews
+                        </label>
+                        <br>
+                        <div class="input-group">
+                            <input id="footer-email" class="form-control custom-form-control" type="email"
+                                placeholder="email address" name="email" style="direction: ltr;" required>
+                            <button type="submit" class="btn   custom-btn-primary2">
+                                Follow
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div id="footer-copyright-social" class="col-12">
+                <div class="container">
+                    <div class="clearfix">
+                        <div id="copyright" class="float-right">
+                            All rights are reserved for our store 2020
+                        </div>
+                        <div id="social-icons" class="float-left">
+                            <a href="https://www.facebook.com">
+                                <i class="fab fa-facebook-square fa-lg"></i>
+                            </a>
+                            <a href="https://www.twitter.com">
+                                <i class="fab fa-twitter-square fa-lg"></i>
+                            </a>
+                            <a href="https://www.instagram.com">
+                                <i class="fab fa-instagram fa-lg"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="main.js"></script></body>
+
+</html>

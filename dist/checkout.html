@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Arabi store</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/html" src="{require('index.js')}"></script>
+
+<link href="css/style.css" rel="stylesheet"></head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="navbar custom-navbar navbar-expand-lg">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button class="navbar-toggler btn btn-icon collapsed" data-toggle="collapse"
+                            data-target="#navbar-collapsed-menu">
+                            <i class="fas fa-bars"></i>
+                        </button>
+                        <a href="./checkout.html" class="navbar-toggler btn btn-icon">
+                            <i class="fas fa-shopping-cart"></i>
+                        </a>
+                        <a href="." class="navbar-brand">
+                            <img src="images/logo.png" alt="Arabi store">
+                        </a>
+                    </div>
+                    <form class="form-inline">
+                        <input class="form-control custom-form-control" type="search" placeholder="Search">
+                        <div class="dropdown categories">
+                            <a class="nav-link dropdown-toggle custom-btn" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-expanded="false">
+                                Choose category
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-right custom-dropdown-menu">
+                                <li>
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" name="search-category" value="men"> Men
+                                        </label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" name="search-category" value="women"> Women
+                                        </label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" name="search-category" value="kids"> Kids
+                                        </label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <button class="btn search-btn" type="submit">Search</button>
+                    </form>
+                    <div class="collapse navbar-collapse" id="navbar-collapsed-menu">
+
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="./index.html">Home Page</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-toggle="dropdown" aria-expanded="false">Store sections</a>
+                                <ul class="dropdown-menu custom-dropdown-menu dropdown-menu-right">
+                                    <li>
+                                        <a class="dropdown-item" href="#">Men</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">Women</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">Kids</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./search.html">Research</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./contact.html">Contact us</a>
+                            </li>
+                            <li class="d-none d-lg-block">
+                                <a href="checkout.html" id="btn-shopping-cart" class="btn btn-icon" title="Buying cart"
+                                    data-toggle="tooltip" data-placement="bottom">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </nav>
+        </div>
+        <div class="container">
+            <div class="row">
+                <ol class="breadcrumb custom-breadcrumb">
+                    <li>
+                        <a href=".">Home page</a>
+                    </li>
+                    <li class="active">Buying card</li>
+                </ol>
+            </div>
+            <div class="borders-between">
+                <div class="row">
+                    <h1 class="custom-heading">Buying card</h1>
+                    <form id="form-checkout" action="payment.html">
+                        <table class="custom-table">
+                            <thead>
+                                <tr>
+                                    <th>product</th>
+                                    <th>price</th>
+                                    <th>quantity</th>
+                                    <th class="hide-on-small">whole sale</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr data-product-info data-product-price="400">
+                                    <td>
+                                        <div class="media custom-media">
+                                            <img src="images/lacoste_1.jpg" alt="men t-shirt lacoste"
+                                                class="d-none d-md-block">
+                                            <div class="media-body">
+                                                <h4>lacoste men t-shirt</h4>
+                                                <div class="custom-text-muted">
+                                                    Men clothes
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        400$
+                                    </td>
+                                    <td>
+                                        <input name="product1" type="hidden" value="men t-shirt lacoste">
+                                        <select name="quantity1" class="form-control custom-form-control  quantity"
+                                            data-product-quantity>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3" selected>3</option>
+                                        </select>
+                                    </td>
+                                    <td class="total-price-for-product hide-on-small">
+                                        1200$
+                                    </td>
+                                    <td>
+                                        <button class="btn btn-danger custom-btn custom-btn-danger"
+                                            data-remove-from-cart>
+                                            <span class="d-none d-md-block">Delete</span>
+                                            <i class="far fa-trash-alt d-block d-md-none"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr data-product-info data-product-price="300">
+                                    <td>
+                                        <div class="media custom-media">
+                                            <img src="images/tshirt.jpg" alt="adidas t-shirt" class="d-none d-md-block">
+                                            <div class="media-body">
+                                                <h4>adidas t-shirt</h4>
+                                                <div class="custom-text-muted">
+                                                    Men clothes
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>300$</td>
+                                    <td>
+                                        <input name="product2" type="hidden" value="adidas t-shirt">
+                                        <select name="quantity2" class="form-control custom-form-control quantity"
+                                            data-product-quantity>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                        </select>
+                                    </td>
+                                    <td class="total-price-for-product hide-on-small">
+                                        300$
+                                    </td>
+                                    <td>
+                                        <button class="btn btn-danger custom-btn-danger custom-btn"
+                                            data-remove-from-cart>
+                                            <span class="d-none d-md-block">Delete</span>
+                                            <i class="far fa-trash-alt d-block d-md-none"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td colspan="5" class="total-price">
+                                        <span class="custom-text-muted">
+                                            <span class="custom-text-muted">
+                                                Whole sale price:
+                                            </span>
+                                            <span id="total-price-for-all-products">1500</span>
+                                            Dollar
+                                        </span>
+                                    </td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                        <button type="submit" class="btn custom-btn-primary2 custom-btn-with-icon">
+                            <span>
+                                Continue buying process
+                                <i class="fas fa-dollar-sign fa-lg"></i>
+                            </span>
+                        </button>
+                    </form>
+                </div>
+
+                <div class="row suggestions">
+                    <h3 class="custom-heading col-sm-12">suggestions</h3>
+                    <div class="col-lg-3 col-md-4">
+                        <div class="card custom-thumbnail">
+                            <div class="overlay">
+                                <button class="btn btn-secondary add-to-cart-btn" data-add-to-cart="">
+                                    Add to cart
+                                    <i class="fas fa-cart-plus"></i>
+                                </button>
+                            </div>
+                            <img src="images/most_sold_2.jpg" alt="flora t-shirt">
+                            <div class="card-body">
+                                <div class="clearfix">
+                                    <h4 class="float-right">flora t-shirt</h4>
+                                    <div class="price float-left">
+                                        200$
+                                    </div>
+                                </div>
+                                <div class="clearfix">
+                                    <div class="rating float-right">
+                                        <i class="fas fa-star active"></i>
+                                        <i class="fas fa-star active"></i>
+                                        <i class="fas fa-star active"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <button class="float-right btn btn-default add-to-cart-btn d-block d-lg-none"
+                                        data-add-to-cart="">
+                                        Add to cart
+                                        <i class="fas fa-cart-plus"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4">
+                        <div class="card custom-thumbnail">
+                            <div class="overlay">
+                                <button class="btn btn-secondary add-to-cart-btn">
+                                    Add to cart
+                                    <i class="fas fa-cart-plus"></i>
+                                </button>
+                            </div>
+                            <img src="images/most_sold_1.jpg" alt="blouse from navi">
+                            <div class="card-body">
+                                <div class="clearfix">
+                                    <h4 class="float-right">blouse from navi</h4>
+                                    <div class="price float-left">
+                                        500$
+                                    </div>
+                                </div>
+                                <div class="clearfix">
+                                    <div class="rating">
+                                        <i class="fas fa-star active"></i>
+                                        <i class="fas fa-star active"></i>
+                                        <i class="fas fa-star active"></i>
+                                        <i class="fas fa-star active"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <button class="float-right btn btn-default add-to-cart-btn d-block d-lg-none"
+                                        data-add-to-cart="">
+                                        Add to cart
+                                        <i class="fas fa-cart-plus"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4">
+                        <div class="card custom-thumbnail">
+                            <div class="sale">50%</div>
+                            <div class="overlay">
+                                <button class="btn btn-secondary add-to-cart-btn">
+                                    Add to cart
+                                    <i class="fas fa-cart-plus"></i>
+                                </button>
+                            </div>
+                            <img src="images/most_sold_3.jpg" alt="Children's jacket">
+                            <div class="card-body">
+                                <div class="clearfix">
+                                    <h4 class="float-right">Children's jacket</h4>
+                                    <div class="price float-left">
+                                        450$
+                                    </div>
+                                </div>
+                                <div class="clearfix">
+                                    <div class="rating">
+                                        <i class="fas fa-star active"></i>
+                                        <i class="fas fa-star active"></i>
+                                        <i class="fas fa-star active"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <button class="float-right btn btn-default add-to-cart-btn d-block d-lg-none"
+                                        data-add-to-cart="">
+                                        Add to cart
+                                        <i class="fas fa-cart-plus"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 d-none d-lg-block">
+                        <div class="card custom-thumbnail">
+                            <div class="overlay">
+                                <button class="btn btn-secondary add-to-cart-btn">
+                                    Add to cart
+                                    <i class="fas fa-cart-plus"></i>
+                                </button>
+                            </div>
+                            <img src="images/hm_3.jpg" alt="Kids set">
+                            <div class="card-body">
+                                <div class="clearfix">
+                                    <h4 class="float-right">Kids set</h4>
+                                    <div class="price float-left">
+                                        25$
+                                    </div>
+                                </div>
+                                <div class="clearfix">
+                                    <div class="rating">
+                                        <i class="fas fa-star active"></i>
+                                        <i class="fas fa-star active"></i>
+                                        <i class="fas fa-star active"></i>
+                                        <i class="fas fa-star active"></i>
+                                        <i class="fas fa-star active"></i>
+                                    </div>
+                                    <button class="float-right btn btn-default add-to-cart-btn d-block d-lg-none"
+                                        data-add-to-cart="">
+                                        Add to cart
+                                        <i class="fas fa-cart-plus"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="footer" class="row">
+            <div id="brand-logos" class="col-12 text-center">
+                <span>The store is an authorized agent of major international companies</span>
+                <div class="img-container">
+                    <img src="images/lacoste.png" alt="Lacoste">
+                    <img src="images/adidas.png" alt="Adidas">
+                    <img src="images/puma.png" alt="Puma">
+                    <img src="images/polo.png" alt="Polo">
+                </div>
+            </div>
+
+            <div id="footer-nav" class="col-12 text-center">
+                <div class="footer-logo">
+                    <a href="./">
+                        <img src="images/logo_footer.png" alt="Arabi">
+                    </a>
+                </div>
+                <div id="footer-nav-links" class="col-12 d-none d-md-block">
+                    <a href=".">Home page</a>
+                    <a href="search.html">Research</a>
+                    <a href="contact.html">Contact us</a>
+                </div>
+                <div id="newsletter" class="col-12 col-md-6 offset-md-3">
+                    <form>
+                        <label for="footer-email">
+                            Follow our mail newsletter to recieve our latest news
+                        </label>
+                        <br>
+                        <div class="input-group">
+                            <input id="footer-email" class="form-control custom-form-control" type="email"
+                                placeholder="email address" name="email" style="direction:ltr;" required>
+                            <button type="submit" class="btn   custom-btn-primary2">
+                                Follow
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div id="footer-copyright-social" class="col-12">
+                <div class="container">
+                    <div class="clearfix">
+                        <div id="copyright" class="float-right">
+                            All rights are reserved for the store 2020
+                        </div>
+                        <div id="social-icons" class="float-left">
+                            <a href="https://www.facebook.com">
+                                <i class="fab fa-facebook-square fa-lg"></i>
+                            </a>
+                            <a href="https://www.twitter.com">
+                                <i class="fab fa-twitter-square fa-lg"></i>
+                            </a>
+                            <a href="https://www.instagram.com">
+                                <i class="fab fa-instagram fa-lg"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+<script src="main.js"></script></body>
+
+</html>

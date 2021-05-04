@@ -17,7 +17,7 @@ $(function() {
   $('[data-toggle="tooltip"]').tooltip();
 
   $('.add-to-cart-btn').on( "click",function() {
-      alert('أضيف المُنتج إلى عربة الشراء');
+      alert('Add product to buying cart');
   });
 
     
@@ -78,7 +78,7 @@ $(function() {
 
     $('#form-checkout select[name="city"]').empty();
     $('#form-checkout select[name="city"]').append(
-        '<option disabled selected value="">اختر المدينة</option>'
+        '<option disabled selected value="">Choose City</option>'
     );
 
     cities.forEach(function(city) {
