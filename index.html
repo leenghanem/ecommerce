@@ -1,0 +1,1175 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Arabi store</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/html" src="{require('index.js')}"></script>
+<link href="css/style.css" rel="stylesheet"></head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="navbar custom-navbar navbar-expand-lg">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button class="navbar-toggler btn btn-icon collapsed" data-toggle="collapse"
+                            data-target="#navbar-collapsed-menu">
+                            <i class="fas fa-bars"></i>
+                        </button>
+                        <a href="./checkout.html" class="navbar-toggler btn btn-icon">
+                            <i class="fas fa-shopping-cart"></i>
+                        </a>
+                        <a href="." class="navbar-brand">
+                            <img src="images/logo.png" alt="Arabi store">
+                        </a>
+                    </div>
+                    <form class="form-inline">
+                        <input class="form-control custom-form-control" type="search" placeholder="search">
+                        <div class="dropdown categories">
+                            <a class="nav-link dropdown-toggle custom-btn" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-expanded="false">
+                                Choose category
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-right custom-dropdown-menu">
+                                <li>
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" name="search-category" value="men"> Men
+                                        </label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" name="search-category" value="women"> Women
+                                        </label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" name="search-category" value="kids">Kids
+                                        </label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <button class="btn search-btn" type="submit">Seatch</button>
+                    </form>
+                    <div class="collapse navbar-collapse" id="navbar-collapsed-menu">
+
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="./index.html">Home page</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-toggle="dropdown" aria-expanded="false">Store sections</a>
+                                <ul class="dropdown-menu custom-dropdown-menu dropdown-menu-right">
+                                    <li>
+                                        <a class="dropdown-item" href="#">Men</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">Women</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">Kids</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./search.html">Research</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./contact.html">Contact us</a>
+                            </li>
+                            <li class="d-none d-lg-block">
+                                <a href="checkout.html" id="btn-shopping-cart" class="btn btn-icon" title="Buying cart"
+                                    data-toggle="tooltip" data-placement="bottom">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </nav>
+        </div>
+
+        <div class="row carousel-row">
+            <div class="col-12">
+                <div id="carousel-featured" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-12 col-md-4 offset-lg-2 text-center">
+                                        <img src="images/lacoste_1.png" alt="Lacoste men t-shirt">
+                                    </div>
+                                    <div class="col-12 col-md-8 col-lg-5">
+                                        <div class="product-details">
+                                            <div class="sale large">
+                                                50%
+                                                <span>Sale</span>
+                                            </div>
+                                            <div class="product-category">sales</div>
+                                            <h1>Lacoste men t-shirt</h1>
+                                            <a href="product.html" class="btn btn-lg custom-btn-primary">Shop now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-12 col-md-4 offset-lg-2 text-center">
+                                        <img src="images/lacoste_2.png" alt="VentaKO women's bag">
+                                    </div>
+                                    <div class="col-12 col-md-8 col-lg-5">
+                                        <div class="product-details">
+                                            <div class="product-category">Women</div>
+                                            <h1>VentaKO women's bag</h1>
+                                            <a href="product.html" class="btn btn-lg custom-btn-primary">Shop now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-12 col-md-4 offset-lg-2 text-center">
+                                        <img src="images/lacoste_3.png" alt="Polo t-shirt">
+                                    </div>
+                                    <div class="col-12 col-md-8 col-lg-5">
+                                        <div class="product-details">
+                                            <div class="product-category">Best selling</div>
+                                            <h1>Polo t-shirt</h1>
+                                            <a href="product.html" class="btn btn-lg custom-btn-primary">Shop now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-12 col-md-4 offset-lg-2 text-center">
+                                        <img src="images/adidas_3.png" alt="Firebird sport suit">
+                                    </div>
+                                    <div class="col-12 col-md-8 col-lg-5">
+                                        <div class="product-details">
+                                            <div class="product-category">Kids</div>
+                                            <h1>Firebird sport suit</h1>
+                                            <a href="product.html" class="btn btn-lg custom-btn-primary">Shop now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" carousel-indicators custom-carousel-indicators-primary d-none d-md-block">
+                        <img src="images/lacoste_1.png" alt="Lacoste men t-shirt" data-target="#carousel-featured"
+                            data-slide-to="0" class="active">
+                        <img src="images/lacoste_2.png" alt="VentaKO women's bag" data-target="#carousel-featured"
+                            data-slide-to="1">
+                        <img src="images/lacoste_3.png" alt="Polo men's t-shirt" data-target="#carousel-featured"
+                            data-slide-to="2">
+                        <img src="images/adidas_3.png" alt="Firebird sport suit" data-target="#carousel-featured"
+                            data-slide-to="3">
+                    </div>
+                    <a class="carousel-control-prev custom-carousel-control" href="#carousel-featured"
+                        data-slide="prev">
+                        <i class="fa fa-chevron-right fa-2x"></i>
+                    </a>
+                    <a class="carousel-control-next custom-carousel-control" href="#carousel-featured"
+                        data-slide="next">
+                        <i class="fa fa-chevron-left fa-2x"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div id="store-features" class="col-12 col-md-8 offset-md-2 col-lg-6 offset-lg-3">
+                    <h3 class="text-center custom-heading">
+                        Store features
+                    </h3>
+                    <div class="row">
+                        <div class="col-4 text-center feature">
+                            <img src="images/feature_1.png" alt="Free delivery">
+                            <div>Free delivery
+
+                            </div>
+                        </div>
+                        <div class="col-4 text-center feature">
+                            <img src="images/feature_2.png" alt="1 year warranty">
+                            <div>1 year warranty</div>
+                        </div>
+                        <div class="col-4 text-center feature">
+                            <img src="images/feature_3.png" alt="Product refund">
+                            <div>Product refund</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="container">
+                <h3 class="text-center custom-heading"> Best Selling</h3>
+                <div id="carousel-most-sold" class="carousel slide d-none d-md-block" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col-lg-3 col-md-4">
+                                    <div class="card custom-thumbnail">
+                                        <div class="overlay"> <button
+                                                class="btn btn-secondary custom-btn add-to-cart-btn">Add to cart <i
+                                                    class="fas fa-cart-plus"></i></button> </div> <img
+                                            src="images/most_sold_2.jpg" alt="flora T-shirt">
+                                        <div class="card-body">
+                                            <div class="clearfix">
+                                                <h4 class="float-left">Flora T-Shirt</h4>
+                                                <div class="price float-right"> 200$ </div>
+                                            </div>
+                                            <div class="rating"> <i class="fas fa-star active"></i> <i
+                                                    class="fas fa-star active"></i> <i class="fas fa-star active"></i>
+                                                <i class="fas fa-star active"></i> <i class="fas fa-star"></i> </div>
+                                            <button
+                                                class="btn btn-default custom-btn add-to-cart-btn d-block d-lg-none">
+                                                Add to cart <i class="fas fa-cart-plus"></i> </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-4">
+                                    <div class="card custom-thumbnail">
+                                        <div class="sale">50%</div>
+                                        <div class="overlay"> <button
+                                                class="btn btn-secondary custom-btn add-to-cart-btn">Add to cart <i
+                                                    class="fas fa-cart-plus"></i></button> </div> <img
+                                            src="images/most_sold_1.jpg" alt="Share blues T-shirt">
+                                        <div class="card-body">
+                                            <div class="clearfix">
+                                                <h4 class="float-left"> Blues T-Shirt</h4>
+                                                <div class="price float-right"> 150$ </div>
+                                            </div>
+                                            <div class="rating"> <i class="fas fa-star active"></i> <i
+                                                    class="fas fa-star active"></i> <i class="fas fa-star active"></i>
+                                                <i class="fas fa-star"></i> <i class="fas fa-star"></i> </div> <button
+                                                class="btn btn-default custom-btn add-to-cart-btn d-block d-lg-none">
+                                                Add to cart <i class="fas fa-cart-plus"></i> </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-4">
+                                    <div class="card custom-thumbnail">
+                                        <div class="overlay"> <button
+                                                class="btn btn-secondary custom-btn add-to-cart-btn">Add to cart <i
+                                                    class="fas fa-cart-plus"></i></button> </div> <img
+                                            src="images/most_sold_3.jpg" alt="Kid Jacket">
+                                        <div class="card-body">
+                                            <div class="clearfix">
+                                                <h4 class="float-left">Kids Jacket</h4>
+                                                <div class="price float-right"> 100$ </div>
+                                            </div>
+                                            <div class="rating"> <i class="fas fa-star active"></i> <i
+                                                    class="fas fa-star active"></i> <i class="fas fa-star active"></i>
+                                                <i class="fas fa-star active"></i> <i class="fas fa-star"></i> </div>
+                                            <button
+                                                class="btn btn-default custom-btn add-to-cart-btn d-block d-lg-none">
+                                                Add to cart <i class="fas fa-cart-plus"></i> </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-4 d-none d-lg-block">
+                                    <div class="card custom-thumbnail">
+                                        <div class="overlay"> <button
+                                                class="btn btn-secondary custom-btn add-to-cart-btn">Add to cart <i
+                                                    class="fas fa-cart-plus"></i></button> </div> <img
+                                            src="images/hm_3.jpg" alt="kid suit">
+                                        <div class="card-body">
+                                            <div class="clearfix">
+                                                <h4 class="float-left">Kid Suit</h4>
+                                                <div class="price float-right"> 75$ </div>
+                                            </div>
+                                            <div class="rating"> <i class="fas fa-star active"></i> <i
+                                                    class="fas fa-star active"></i> <i class="fas fa-star active"></i>
+                                                <i class="fas fa-star active"></i> <i class="fas fa-star active"></i>
+                                            </div> <button
+                                                class="btn btn-default custom-btn add-to-cart-btn d-block d-lg-none">
+                                                Add to cart <i class="fas fa-cart-plus"></i> </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-lg-3 col-md-4">
+                                    <div class="card custom-thumbnail">
+                                        <div class="overlay"> <button
+                                                class="btn btn-secondary custom-btn add-to-cart-btn">Add to cart <i
+                                                    class="fas fa-cart-plus"></i></button> </div> <img
+                                            src="images/hm_1.jpg" alt="flora T-shirt">
+                                        <div class="card-body">
+                                            <div class="clearfix">
+                                                <h4 class="float-left">Flora T-Shirt</h4>
+                                                <div class="price float-right"> 200$ </div>
+                                            </div>
+                                            <div class="rating"> <i class="fas fa-star active"></i> <i
+                                                    class="fas fa-star active"></i> <i class="fas fa-star"></i> <i
+                                                    class="fas fa-star"></i> <i class="fas fa-star"></i> </div> <button
+                                                class="btn btn-default custom-btn add-to-cart-btn d-block d-lg-none">
+                                                Add to cart <i class="fas fa-cart-plus"></i> </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-4">
+                                    <div class="card custom-thumbnail">
+                                        <div class="overlay"> <button
+                                                class="btn btn-secondary custom-btn add-to-cart-btn">Add to cart <i
+                                                    class="fas fa-cart-plus"></i></button> </div> <img
+                                            src="images/hm_2.jpg" alt="Share blues T-shirt">
+                                        <div class="card-body">
+                                            <div class="clearfix">
+                                                <h4 class="float-left">Girls dress</h4>
+                                                <div class="price float-right"> 150$ </div>
+                                            </div>
+                                            <div class="rating"> <i class="fas fa-star active"></i> <i
+                                                    class="fas fa-star active"></i> <i class="fas fa-star active"></i>
+                                                <i class="fas fa-star"></i> <i class="fas fa-star"></i> </div> <button
+                                                class="btn btn-default custom-btn add-to-cart-btn d-block d-lg-none">
+                                                Add to cart <i class="fas fa-cart-plus"></i> </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-4">
+                                    <div class="card custom-thumbnail">
+                                        <div class="sale">30%</div>
+                                        <div class="overlay"> <button
+                                                class="btn btn-secondary custom-btn add-to-cart-btn">Add to cart <i
+                                                    class="fas fa-cart-plus"></i></button> </div> <img
+                                            src="images/hm_4.jpg" alt="Kid Jacket">
+                                        <div class="card-body">
+                                            <div class="clearfix">
+                                                <h4 class="float-left">Bag</h4>
+                                                <div class="price float-right"> 100$ </div>
+                                            </div>
+                                            <div class="rating"> <i class="fas fa-star active"></i> <i
+                                                    class="fas fa-star active"></i> <i class="fas fa-star active"></i>
+                                                <i class="fas fa-star active"></i> <i class="fas fa-star"></i> </div>
+                                            <button
+                                                class="btn btn-default custom-btn add-to-cart-btn d-block d-lg-none">
+                                                Add to cart <i class="fas fa-cart-plus"></i> </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-4 d-none d-lg-block">
+                                    <div class="card custom-thumbnail">
+                                        <div class="overlay"> <button
+                                                class="btn btn-secondary custom-btn add-to-cart-btn">Add to cart <i
+                                                    class="fas fa-cart-plus"></i></button> </div> <img
+                                            src="images/adidas_3.jpg" alt="kid suit">
+                                        <div class="card-body">
+                                            <div class="clearfix">
+                                                <h4 class="float-left">Adidas</h4>
+                                                <div class="price float-right"> 125$ </div>
+                                            </div>
+                                            <div class="rating"> <i class="fas fa-star active"></i> <i
+                                                    class="fas fa-star active"></i> <i class="fas fa-star active"></i>
+                                                <i class="fas fa-star active"></i> <i class="fas fa-star active"></i>
+                                            </div> <button
+                                                class="btn btn-default custom-btn add-to-cart-btn d-block d-lg-none">
+                                                Add to cart <i class="fas fa-cart-plus"></i> </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-lg-3 col-md-4">
+                                    <div class="card custom-thumbnail">
+                                        <div class="sale">50%</div>
+                                        <div class="overlay"> <button
+                                                class="btn btn-secondary custom-btn add-to-cart-btn">Add to cart <i
+                                                    class="fas fa-cart-plus"></i></button> </div> <img
+                                            src="images/adidas_2.jpg" alt="flora T-shirt">
+                                        <div class="card-body">
+                                            <div class="clearfix">
+                                                <h4 class="float-left">Adidas shoes</h4>
+                                                <div class="price float-right"> 150$ </div>
+                                            </div>
+                                            <div class="rating"> <i class="fas fa-star active"></i> <i
+                                                    class="fas fa-star active"></i> <i class="fas fa-star active"></i>
+                                                <i class="fas fa-star"></i> <i class="fas fa-star"></i> </div> <button
+                                                class="btn btn-default custom-btn add-to-cart-btn d-block d-lg-none">
+                                                Add to cart <i class="fas fa-cart-plus"></i> </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-4">
+                                    <div class="card custom-thumbnail">
+                                        <div class="overlay"> <button
+                                                class="btn btn-secondary custom-btn add-to-cart-btn">Add to cart <i
+                                                    class="fas fa-cart-plus"></i></button> </div> <img
+                                            src="images/puma_1.jpg" alt="Share blues T-shirt">
+                                        <div class="card-body">
+                                            <div class="clearfix">
+                                                <h4 class="float-left">Puma shoes</h4>
+                                                <div class="price float-right"> 125$ </div>
+                                            </div>
+                                            <div class="rating"> <i class="fas fa-star active"></i> <i
+                                                    class="fas fa-star active"></i> <i class="fas fa-star active"></i>
+                                                <i class="fas fa-star active"></i> <i class="fas fa-star"></i> </div>
+                                            <button
+                                                class="btn btn-default custom-btn add-to-cart-btn d-block d-lg-none">
+                                                Add to cart <i class="fas fa-cart-plus"></i> </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-4">
+                                    <div class="card custom-thumbnail">
+                                        <div class="overlay"> <button
+                                                class="btn btn-secondary custom-btn add-to-cart-btn">Add to cart <i
+                                                    class="fas fa-cart-plus"></i></button> </div> <img
+                                            src="images/lacoste_2.jpg" alt="Kid Jacket">
+                                        <div class="card-body">
+                                            <div class="clearfix">
+                                                <h4 class="float-left">VentaKO Bag</h4>
+                                                <div class="price float-right"> 180$ </div>
+                                            </div>
+                                            <div class="rating"> <i class="fas fa-star active"></i> <i
+                                                    class="fas fa-star active"></i> <i class="fas fa-star active"></i>
+                                                <i class="fas fa-star active"></i> <i class="fas fa-star"></i> </div>
+                                            <button
+                                                class="btn btn-default custom-btn add-to-cart-btn d-block d-lg-none">
+                                                Add to cart <i class="fas fa-cart-plus"></i> </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-4 d-none d-lg-block">
+                                    <div class="card custom-thumbnail">
+                                        <div class="overlay"> <button
+                                                class="btn btn-secondary custom-btn add-to-cart-btn">Add to cart <i
+                                                    class="fas fa-cart-plus"></i></button> </div> <img
+                                            src="images/hm_1.jpg" alt="kids suit">
+                                        <div class="card-body">
+                                            <div class="clearfix">
+                                                <h4 class="float-left">T-Shirt</h4>
+                                                <div class="price float-right"> 65$ </div>
+                                            </div>
+                                            <div class="rating"> <i class="fas fa-star active"></i> <i
+                                                    class="fas fa-star active"></i> <i class="fas fa-star active"></i>
+                                                <i class="fas fa-star active"></i> <i class="fas fa-star"></i> </div>
+                                            <button
+                                                class="btn btn-default custom-btn add-to-cart-btn d-block d-lg-none">
+                                                Add to cart <i class="fas fa-cart-plus"></i> </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <ol class="carousel-indicators custom-carousel-indicators">
+                        <li data-target="#carousel-most-sold" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-most-sold" data-slide-to="1"></li>
+                        <li data-target="#carousel-most-sold" data-slide-to="2"></li>
+                    </ol>
+                </div>
+                <div id="carousel-most-sold-alternative" class="carousel slide d-md-none" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="card custom-thumbnail">
+                                <div class="overlay"> <button class="btn btn-secondary custom-btn add-to-cart-btn">Add
+                                        to cart <i class="fas fa-cart-plus"></i></button> </div> <img
+                                    src="images/most_sold_2.jpg" alt="flora T-shirt">
+                                <div class="card-body">
+                                    <div class="clearfix">
+                                        <h4 class="float-left">Flora T-Shirt</h4>
+                                        <div class="price float-right"> 200$ </div>
+                                    </div>
+                                    <div class="rating"> <i class="fas fa-star active"></i> <i
+                                            class="fas fa-star active"></i> <i class="fas fa-star active"></i> <i
+                                            class="fas fa-star active"></i> <i class="fas fa-star"></i> </div> <button
+                                        class="btn btn-default custom-btn add-to-cart-btn d-block d-lg-none"> Add to
+                                        cart <i class="fas fa-cart-plus"></i> </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card custom-thumbnail">
+                                <div class="sale">50%</div>
+                                <div class="overlay"> <button class="btn btn-secondary custom-btn add-to-cart-btn">Add
+                                        to cart <i class="fas fa-cart-plus"></i></button> </div> <img
+                                    src="images/most_sold_1.jpg" alt="Share blues T-shirt">
+                                <div class="card-body">
+                                    <div class="clearfix">
+                                        <h4 class="float-left"> Blouse from navy</h4>
+                                        <div class="price float-right"> 150$ </div>
+                                    </div>
+                                    <div class="rating"> <i class="fas fa-star active"></i> <i
+                                            class="fas fa-star active"></i> <i class="fas fa-star active"></i> <i
+                                            class="fas fa-star"></i> <i class="fas fa-star"></i> </div> <button
+                                        class="btn btn-default custom-btn add-to-cart-btn d-block d-lg-none"> Add to
+                                        cart <i class="fas fa-cart-plus"></i> </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card custom-thumbnail">
+                                <div class="overlay"> <button class="btn btn-secondary custom-btn add-to-cart-btn">Add
+                                        to cart <i class="fas fa-cart-plus"></i></button> </div> <img
+                                    src="images/most_sold_3.jpg" alt="Kid Jacket">
+                                <div class="card-body">
+                                    <div class="clearfix">
+                                        <h4 class="float-left">Kids Jacket</h4>
+                                        <div class="price float-right"> 100$ </div>
+                                    </div>
+                                    <div class="rating"> <i class="fas fa-star active"></i> <i
+                                            class="fas fa-star active"></i> <i class="fas fa-star active"></i> <i
+                                            class="fas fa-star active"></i> <i class="fas fa-star"></i> </div> <button
+                                        class="btn btn-default custom-btn add-to-cart-btn d-block d-lg-none"> Add to
+                                        cart <i class="fas fa-cart-plus"></i> </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card custom-thumbnail">
+                                <div class="overlay"> <button class="btn btn-secondary custom-btn add-to-cart-btn">Add
+                                        to cart <i class="fas fa-cart-plus"></i></button> </div> <img
+                                    src="images/hm_3.jpg" alt="kid suit">
+                                <div class="card-body">
+                                    <div class="clearfix">
+                                        <h4 class="float-left">Kids Suit</h4>
+                                        <div class="price float-right"> 75$ </div>
+                                    </div>
+                                    <div class="rating"> <i class="fas fa-star active"></i> <i
+                                            class="fas fa-star active"></i> <i class="fas fa-star active"></i> <i
+                                            class="fas fa-star active"></i> <i class="fas fa-star active"></i> </div>
+                                    <button class="btn btn-default custom-btn add-to-cart-btn d-block d-lg-none"> Add to
+                                        cart <i class="fas fa-cart-plus"></i> </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card custom-thumbnail">
+                                <div class="overlay"> <button class="btn btn-secondary custom-btn add-to-cart-btn">Add
+                                        to cart <i class="fas fa-cart-plus"></i></button> </div> <img
+                                    src="images/hm_1.jpg" alt="flora T-shirt">
+                                <div class="card-body">
+                                    <div class="clearfix">
+                                        <h4 class="float-left">Flora T-Shirt</h4>
+                                        <div class="price float-right"> 200$ </div>
+                                    </div>
+                                    <div class="rating"> <i class="fas fa-star active"></i> <i
+                                            class="fas fa-star active"></i> <i class="fas fa-star"></i> <i
+                                            class="fas fa-star"></i> <i class="fas fa-star"></i> </div> <button
+                                        class="btn btn-default custom-btn add-to-cart-btn d-block d-lg-none"> Add to
+                                        cart <i class="fas fa-cart-plus"></i> </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card custom-thumbnail">
+                                <div class="overlay"> <button class="btn btn-secondary custom-btn add-to-cart-btn">Add
+                                        to cart <i class="fas fa-cart-plus"></i></button> </div> <img
+                                    src="images/hm_2.jpg" alt="Share blues T-shirt">
+                                <div class="card-body">
+                                    <div class="clearfix">
+                                        <h4 class="float-left">Girls dress</h4>
+                                        <div class="price float-right"> 150$ </div>
+                                    </div>
+                                    <div class="rating"> <i class="fas fa-star active"></i> <i
+                                            class="fas fa-star active"></i> <i class="fas fa-star active"></i> <i
+                                            class="fas fa-star"></i> <i class="fas fa-star"></i> </div> <button
+                                        class="btn btn-default custom-btn add-to-cart-btn d-block d-lg-none"> Add to
+                                        cart <i class="fas fa-cart-plus"></i> </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card custom-thumbnail">
+                                <div class="sale">30%</div>
+                                <div class="overlay"> <button class="btn btn-secondary custom-btn add-to-cart-btn">Add
+                                        to cart <i class="fas fa-cart-plus"></i></button> </div> <img
+                                    src="images/hm_4.jpg" alt="Kid Jacket">
+                                <div class="card-body">
+                                    <div class="clearfix">
+                                        <h4 class="float-left">Bag</h4>
+                                        <div class="price float-right"> 100$ </div>
+                                    </div>
+                                    <div class="rating"> <i class="fas fa-star active"></i> <i
+                                            class="fas fa-star active"></i> <i class="fas fa-star active"></i> <i
+                                            class="fas fa-star active"></i> <i class="fas fa-star"></i> </div> <button
+                                        class="btn btn-default custom-btn add-to-cart-btn d-block d-lg-none"> Add to
+                                        cart <i class="fas fa-cart-plus"></i> </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card custom-thumbnail">
+                                <div class="overlay"> <button class="btn btn-secondary custom-btn add-to-cart-btn">Add
+                                        to cart <i class="fas fa-cart-plus"></i></button> </div> <img
+                                    src="images/adidas_3.jpg" alt="kid suit">
+                                <div class="card-body">
+                                    <div class="clearfix">
+                                        <h4 class="float-left">Adidas</h4>
+                                        <div class="price float-right"> 125$ </div>
+                                    </div>
+                                    <div class="rating"> <i class="fas fa-star active"></i> <i
+                                            class="fas fa-star active"></i> <i class="fas fa-star active"></i> <i
+                                            class="fas fa-star active"></i> <i class="fas fa-star active"></i> </div>
+                                    <button class="btn btn-default custom-btn add-to-cart-btn d-block d-lg-none"> Add to
+                                        cart <i class="fas fa-cart-plus"></i> </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card custom-thumbnail">
+                                <div class="sale">50%</div>
+                                <div class="overlay"> <button class="btn btn-secondary custom-btn add-to-cart-btn">Add
+                                        to cart <i class="fas fa-cart-plus"></i></button> </div> <img
+                                    src="images/adidas_2.jpg" alt="flora T-shirt">
+                                <div class="card-body">
+                                    <div class="clearfix">
+                                        <h4 class="float-left">Adidas shoes</h4>
+                                        <div class="price float-right"> 150$ </div>
+                                    </div>
+                                    <div class="rating"> <i class="fas fa-star active"></i> <i
+                                            class="fas fa-star active"></i> <i class="fas fa-star active"></i> <i
+                                            class="fas fa-star"></i> <i class="fas fa-star"></i> </div> <button
+                                        class="btn btn-default custom-btn add-to-cart-btn d-block d-lg-none"> Add to
+                                        cart <i class="fas fa-cart-plus"></i> </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card custom-thumbnail">
+                                <div class="overlay"> <button class="btn btn-secondary custom-btn add-to-cart-btn">Add
+                                        to cart <i class="fas fa-cart-plus"></i></button> </div> <img
+                                    src="images/puma_1.jpg" alt="Share blues T-shirt">
+                                <div class="card-body">
+                                    <div class="clearfix">
+                                        <h4 class="float-left">Puma shoes</h4>
+                                        <div class="price float-right"> 125$ </div>
+                                    </div>
+                                    <div class="rating"> <i class="fas fa-star active"></i> <i
+                                            class="fas fa-star active"></i> <i class="fas fa-star active"></i> <i
+                                            class="fas fa-star active"></i> <i class="fas fa-star"></i> </div> <button
+                                        class="btn btn-default custom-btn add-to-cart-btn d-block d-lg-none"> Add to
+                                        cart <i class="fas fa-cart-plus"></i> </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card custom-thumbnail">
+                                <div class="overlay"> <button class="btn btn-secondary custom-btn add-to-cart-btn">Add
+                                        to cart <i class="fas fa-cart-plus"></i></button> </div> <img
+                                    src="images/lacoste_2.jpg" alt="Kid Jacket">
+                                <div class="card-body">
+                                    <div class="clearfix">
+                                        <h4 class="float-left">VentaKO Bag</h4>
+                                        <div class="price float-right"> 180$ </div>
+                                    </div>
+                                    <div class="rating"> <i class="fas fa-star active"></i> <i
+                                            class="fas fa-star active"></i> <i class="fas fa-star active"></i> <i
+                                            class="fas fa-star active"></i> <i class="fas fa-star"></i> </div> <button
+                                        class="btn btn-default custom-btn add-to-cart-btn d-block d-lg-none"> Add to
+                                        cart <i class="fas fa-cart-plus"></i> </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card custom-thumbnail">
+                                <div class="overlay"> <button class="btn btn-secondary custom-btn add-to-cart-btn">Add
+                                        to cart <i class="fas fa-cart-plus"></i></button> </div> <img
+                                    src="images/hm_1.jpg" alt="kid suit">
+                                <div class="card-body">
+                                    <div class="clearfix">
+                                        <h4 class="float-left">T-Shirt</h4>
+                                        <div class="price float-right"> 65$ </div>
+                                    </div>
+                                    <div class="rating"> <i class="fas fa-star active"></i> <i
+                                            class="fas fa-star active"></i> <i class="fas fa-star active"></i> <i
+                                            class="fas fa-star active"></i> <i class="fas fa-star"></i> </div> <button
+                                        class="btn btn-default custom-btn add-to-cart-btn d-block d-lg-none"> Add to
+                                        cart <i class="fas fa-cart-plus"></i> </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 d-md-none text-center"> <button class="btn custom-arrow-btn"
+                        data-target="#carousel-most-sold-alternative" data-slide="prev"> <i
+                            class="fas fa-chevron-left"></i> </button> <button class="btn custom-arrow-btn"
+                        data-target="#carousel-most-sold-alternative" data-slide="next"> <i
+                            class="fas fa-chevron-right"></i> </button> </div>
+            </div>
+        </div>
+
+            <div id="row-brands">
+                <div class="container">
+                    <h3 class="custom-heading">international trademarks</h3>
+                    <div class="row">
+                        <div class="col-12 col-md-6 brand-products">
+                            <div class=" custom-panel">
+                                <div id="carousel-brand-adidas" class="carousel slide" data-slide="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <div class="row">
+                                                <div class="col-lg-4">
+                                                    <img src="images/adidas_1.jpg" alt="addidas shirt"
+                                                        class="product-image">
+                                                    <a href="product.html"
+                                                        class="btn  custom-btn-primary btn-block d-none d-lg-block">
+                                                        check product
+                                                    </a>
+                                                </div>
+                                                <div class="col-lg-8 product-details">
+                                                    <div class="clearfix">
+                                                        <div class="float-right">
+                                                            <h4>addidas shirt</h4>
+                                                        </div>
+                                                        <div class="float-left price">
+                                                            35$
+                                                        </div>
+                                                    </div>
+                                                    <p class="custom-text-muted">
+                                                        do your best while exercising with the most comfortable shirt
+                                                    </p>
+                                                    <div class="rating">
+                                                        <i class="fas fa-star active"></i>
+                                                        <i class="fas fa-star active"></i>
+                                                        <i class="fas fa-star active"></i>
+                                                        <i class="fas fa-star active"></i>
+                                                        <i class="fas fa-star"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 d-lg-none">
+                                                    <a href="product.html"
+                                                        class="btn  custom-btn-primary btn-block">check product</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="row">
+                                                <div class="col-lg-4">
+                                                    <img src="images/adidas_2.jpg" alt="Nike shoes"
+                                                        class="product-image">
+                                                    <a href="product.html"
+                                                        class="btn  custom-btn-primary btn-block d-none d-lg-block">Adidas
+                                                        shoes</a>
+                                                </div>
+                                                <div class="col-lg-8 product-details">
+                                                    <div class="clearfix">
+                                                        <div class="float-right">
+                                                            <h4>Adidas sport shoes</h4>
+                                                        </div>
+                                                        <div class="price float-left">
+                                                            150$
+                                                        </div>
+                                                    </div>
+                                                    <p class="custom-text-muted">
+                                                        Run at your highest speed and feel light with nike shoes
+                                                    </p>
+                                                    <div class="rating">
+                                                        <i class="fas fa-star active"></i>
+                                                        <i class="fas fa-star active"></i>
+                                                        <i class="fas fa-star active"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 d-lg-none">
+                                                    <a href="product.html"
+                                                        class="btn  custom-btn-primary btn-block">check product</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="brand-nav">
+                                        <div class="clearfix">
+                                            <div class="float-right">
+                                                <div class="brand-text">trademark:</div>
+                                                <img src="images/adidas_small.png" alt="Adidas">
+                                            </div>
+                                            <div class="float-left">
+                                                <button class="btn custom-arrow-btn"
+                                                    data-target="#carousel-brand-adidas" data-slide="prev">
+                                                    <i class="fas fa-chevron-right"></i>
+                                                </button>
+                                                <button class="btn custom-arrow-btn"
+                                                    data-target="#carousel-brand-adidas" data-slide="next">
+                                                    <i class="fas fa-chevron-left"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6 brand-products">
+                            <div class="custom-panel ">
+                                <div id="carousel-brand-puma" class="carousel slide" data-slide="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="active carousel-item">
+                                            <div class="row">
+                                                <div class="col-lg-4">
+                                                    <img src="images/puma_1.jpg" alt="puma shoes"
+                                                        class="product-image">
+                                                    <a href="product.html"
+                                                        class="btn  custom-btn-primary btn-block d-none d-lg-block">check
+                                                        product</a>
+                                                </div>
+                                                <div class="col-lg-8 product-details">
+                                                    <div class="clearfix">
+                                                        <div class="float-right">
+                                                            <h4>puma shoes</h4>
+                                                        </div>
+                                                        <div class="price float-left">
+                                                            75$
+                                                        </div>
+                                                    </div>
+                                                    <p class="custom-text-muted">
+                                                        best sport shoes , used by the best players in 60s
+                                                    </p>
+                                                    <div class="rating">
+                                                        <i class="fas fa-star active"></i>
+                                                        <i class="fas fa-star active"></i>
+                                                        <i class="fas fa-star active"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 d-lg-none">
+                                                    <a href="product.html"
+                                                        class="btn  custom-btn-primary btn-block">check product</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="row">
+                                                <div class="col-lg-4">
+                                                    <img src="images/puma_2.jpg" alt="tennis shoes"
+                                                        class="product-image">
+                                                    <a href="product.html"
+                                                        class="btn  custom-btn-primary btn-block d-none d-lg-block">check
+                                                        product</a>
+                                                </div>
+                                                <div class="col-lg-8 product-details">
+                                                    <div class="clearfix">
+                                                        <div class="float-left">
+                                                            <h4>tennis shoes</h4>
+                                                        </div>
+                                                        <div class="price float-right">
+                                                            65$
+                                                        </div>
+                                                    </div>
+                                                    <p class="custom-text-muted">
+                                                        comfortable shoes great to wear for a long time
+                                                    </p>
+                                                    <div class="rating">
+                                                        <i class="fas fa-star active"></i>
+                                                        <i class="fas fa-star active"></i>
+                                                        <i class="fas fa-star active"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 d-lg-none">
+                                                    <a href="product.html"
+                                                        class="btn  custom-btn-primary btn-block">check product</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="brand-nav">
+                                    <div class="clearfix">
+                                        <div class="float-right">
+                                            <div class="brand-text">trademark:</div>
+                                            <img src="images/puma_small.png" alt="Puma">
+                                        </div>
+                                        <div class="float-left">
+                                            <button class="btn custom-arrow-btn" data-target="#carousel-brand-puma"
+                                                data-slide="prev">
+                                                <i class="fas fa-chevron-right"></i>
+                                            </button>
+                                            <button class="btn custom-arrow-btn" data-target="#carousel-brand-puma"
+                                                data-slide="next">
+                                                <i class="fas fa-chevron-left"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6 brand-products">
+                            <div class="custom-panel ">
+                                <div id="carousel-brand-polo" class="carousel slide" data-slide="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="active carousel-item">
+                                            <div class="row">
+                                                <div class="col-lg-4">
+                                                    <img src="images/polo_1.jpg" alt="slim fit shirt"
+                                                        class="product-image">
+                                                    <a href="product.html"
+                                                        class="btn  custom-btn-primary btn-block d-none d-lg-block">check
+                                                        product</a>
+                                                </div>
+                                                <div class="col-lg-8 product-details">
+                                                    <div class="clearfix">
+                                                        <div class="float-right">
+                                                            <h4>slim fit shirt</h4>
+                                                        </div>
+                                                        <div class="price float-left">
+                                                            85$
+                                                        </div>
+                                                    </div>
+                                                    <p class="custom-text-muted">
+                                                        appeared in 1972 , fits well on everyone
+                                                    </p>
+                                                    <div class="rating">
+                                                        <i class="fas fa-star active"></i>
+                                                        <i class="fas fa-star active"></i>
+                                                        <i class="fas fa-star active"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 d-lg-none">
+                                                    <a href="product.html"
+                                                        class="btn  custom-btn-primary btn-block">check product</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="row">
+                                                <div class="col-lg-4">
+                                                    <img src="images/polo_2.jpg" alt="stretch fit shirt"
+                                                        class="product-image">
+                                                    <a href="product.html"
+                                                        class="btn  custom-btn-primary btn-block d-none d-lg-block">check
+                                                        product</a>
+                                                </div>
+                                                <div class="col-lg-8 product-details">
+                                                    <div class="clearfix">
+                                                        <div class="float-right">
+                                                            <h4>stretch fit shirt</h4>
+                                                        </div>
+                                                        <div class="price float-left">
+                                                            100$
+                                                        </div>
+                                                    </div>
+                                                    <p class="custom-text-muted">
+                                                        made from coton , very comfortable to wear
+                                                    </p>
+                                                    <div class="rating">
+                                                        <i class="fas fa-star active"></i>
+                                                        <i class="fas fa-star active"></i>
+                                                        <i class="fas fa-star active"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 d-lg-none">
+                                                    <a href="product.html"
+                                                        class="btn  custom-btn-primary btn-block">check product</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="brand-nav">
+                                    <div class="clearfix">
+                                        <div class="float-right">
+                                            <div class="brand-text">trademark :</div>
+                                            <img src="images/polo_small.png" alt="Polo">
+                                        </div>
+                                        <div class="float-left">
+                                            <button class="btn custom-arrow-btn" data-target="#carousel-brand-polo"
+                                                data-slide="prev">
+                                                <i class="fas fa-chevron-right"></i>
+                                            </button>
+                                            <button class="btn custom-arrow-btn" data-target="#carousel-brand-polo"
+                                                data-slide="next">
+                                                <i class="fas fa-chevron-left"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6 brand-products">
+                            <div class="custom-panel ">
+                                <div id="carousel-brand-hm" class="carousel slide" data-slide="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="active carousel-item">
+                                            <div class="row">
+                                                <div class="col-lg-4">
+                                                    <img src="images/hm_2.jpg" alt="girls dress"
+                                                        class="product-image">
+                                                    <a href="product.html"
+                                                        class="btn  custom-btn-primary btn-block d-none d-lg-block">check
+                                                        product</a>
+                                                </div>
+                                                <div class="col-lg-8 product-details">
+                                                    <div class="clearfix">
+                                                        <div class="float-right">
+                                                            <h4>girls dress</h4>
+                                                        </div>
+                                                        <div class="price float-left">
+                                                            20$
+                                                        </div>
+                                                    </div>
+                                                    <p class="custom-text-muted">
+                                                        made from natural cotton , available in many colors
+                                                    </p>
+                                                    <div class="rating">
+                                                        <i class="fas fa-star active"></i>
+                                                        <i class="fas fa-star active"></i>
+                                                        <i class="fas fa-star active"></i>
+                                                        <i class="fas fa-star active"></i>
+                                                        <i class="fas fa-star"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 d-lg-none">
+                                                    <a href="product.html"
+                                                        class="btn  custom-btn-primary btn-block">check product</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="row">
+                                                <div class="col-lg-4">
+                                                    <img src="images/hm_3.jpg" alt="kids suit" class="product-image">
+                                                    <a href="product.html"
+                                                        class="btn  custom-btn-primary btn-block d-none d-lg-block">check
+                                                        product</a>
+                                                </div>
+                                                <div class="col-lg-8 product-details">
+                                                    <div class="clearfix">
+                                                        <div class="float-right">
+                                                            <h4>طقم للصغار</h4>
+                                                        </div>
+                                                        <div class="price float-left">
+                                                            25$
+                                                        </div>
+                                                    </div>
+                                                    <p class="custom-text-muted">
+                                                        fits kids from 3 - 5 years , such an adorable outfit with a good
+                                                        price
+                                                    </p>
+                                                    <div class="rating">
+                                                        <i class="fas fa-star active"></i>
+                                                        <i class="fas fa-star active"></i>
+                                                        <i class="fas fa-star active"></i>
+                                                        <i class="fas fa-star active"></i>
+                                                        <i class="fas fa-star"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 d-lg-none">
+                                                    <a href="product.html"
+                                                        class="btn custom-btn-primary btn-block">check product</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="brand-nav">
+                                    <div class="clearfix">
+                                        <div class="float-right">
+                                            <div class="brand-text">trademark:</div>
+                                            <img src="images/hm_small.png" alt="H and M">
+                                        </div>
+                                        <div class="float-left">
+                                            <button class="btn custom-arrow-btn" data-target="#carousel-brand-hm"
+                                                data-slide="prev">
+                                                <i class="fas fa-chevron-right"></i>
+                                            </button>
+                                            <button class="btn custom-arrow-btn" data-target="#carousel-brand-hm"
+                                                data-slide="next">
+                                                <i class="fas fa-chevron-left"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="footer" class="row">
+                <div id="brand-logos" class="col-12 text-center">
+                    <span>The store is an authorized agent of major international companies</span>
+                    <div class="img-container">
+                        <img src="images/lacoste.png" alt="Lacoste">
+                        <img src="images/adidas.png" alt="Adidas">
+                        <img src="images/puma.png" alt="Puma">
+                        <img src="images/polo.png" alt="Polo">
+                    </div>
+                </div>
+
+                <div id="footer-nav" class="col-12 text-center">
+                    <div class="footer-logo">
+                        <a href="./">
+                            <img src="images/logo_footer.png" alt="Arabi">
+                        </a>
+                    </div>
+                    <div id="footer-nav-links" class="col-12 d-none d-md-block">
+                        <a href=".">Home page</a>
+                        <a href="search.html">Research</a>
+                        <a href="contact.html">Contact us</a>
+                    </div>
+                    <div id="newsletter" class="col-12 col-md-6 offset-md-3">
+                        <form>
+                            <label for="footer-email">
+                                follow the mail newsletter to recieve our latest news
+                            </label>
+                            <br>
+                            <div class="input-group">
+                                <input id="footer-email" class="form-control custom-form-control" type="email"
+                                    placeholder="email address" name="email" style="direction:ltr;" required>
+                                <button type="submit" class="btn   custom-btn-primary2">
+                                    Follow
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div id="footer-copyright-social" class="col-12">
+                    <div class="container">
+                        <div class="clearfix">
+                            <div id="copyright" class="float-right">
+                                All rights are reserved for the store 2020
+                            </div>
+                            <div id="social-icons" class="float-left">
+                                <a href="https://www.facebook.com">
+                                    <i class="fab fa-facebook-square fa-lg"></i>
+                                </a>
+                                <a href="https://www.twitter.com">
+                                    <i class="fab fa-twitter-square fa-lg"></i>
+                                </a>
+                                <a href="https://www.instagram.com">
+                                    <i class="fab fa-instagram fa-lg"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+<script src="main.js"></script></body>
+
+</html>
